@@ -7,7 +7,7 @@
 
 <h3>Projeto</h3>
 
-O Aircnc é um projeto que visa conectar empresas que querem abrir spots e desenvolvedores que procuram um lugar para trocar ideias com devs, conhecer a empresa e trabalhar lá por um período.
+  O Aircnc é um projeto que visa conectar empresas que querem abrir spots e desenvolvedores que procuram um lugar para trocar ideias com devs, conhecer a empresa e trabalhar lá por um período.
  conhecer a empresa e trabalhar lá por um período.
 
 <h3>Tecnologias</h3>
