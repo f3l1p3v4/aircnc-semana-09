@@ -19,5 +19,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - React Native 
 - Expo
 
+Feito com ♥ by Felipe Valdez
 
 
