@@ -6,7 +6,7 @@ import camera from '../../assets/camera.svg';
 import './styles.css';
 
 export default function New({ history }) {
-  const [thumbnail, setthumbnail] = useState(null);
+  const [thumbnail, setThumbnail] = useState(null);
   const [company, setCompany] = useState('');
   const [techs, setTechs] = useState('');
   const [price, setPrice] = useState('');
@@ -39,7 +39,7 @@ export default function New({ history }) {
         style={{ backgroundImage: `url(${preview})` }}
         className={thumbnail ? 'has-thumbnail' : ''}
       >
-        <input type="file" onChange={event => setthumbnail(event.target.files[0])} />
+        <input type="file" onChange={event => setThumbnail(event.target.files[0])} />
         <img src={camera} alt="Select img" />
       </label>
 
