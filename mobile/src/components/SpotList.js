@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { withNavigation } from 'react-navigation';
-import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity, AsyncStorage } from 'react-native';
+
+import logos from '../assets/logo.png';
+
 
 import api from '../services/api';
 
@@ -12,7 +15,7 @@ function Spotlist({ tech, navigation }) {
             const response = await api.get('/spots', {
                 params: { tech }
             })
-            
+
             setSpots(response.data);
         }
 
@@ -65,7 +68,7 @@ const styles = StyleSheet.create({
     },
 
     listItem: {
-        marginRight: 15,
+        marginRight: 30,
     },
 
     list: {
@@ -76,7 +79,7 @@ const styles = StyleSheet.create({
         width: 200,
         height: 120,
         resizeMode: 'cover',
-        borderRadius: 2
+        borderRadius: 2,
     },
 
     company: {

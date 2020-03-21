@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import socketio from 'socket.io-client';
-import { Alert, ScrollView, SafeAreaView, StyleSheet, Image, AsyncStorage, TouchableOpacity } from 'react-native';
+import { Alert, ScrollView, SafeAreaView, StyleSheet, Image, AsyncStorage } from 'react-native';
 
 import SpotList from '../components/SpotList';
 
@@ -43,12 +43,13 @@ export default function List() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        marginBottom: 20,
     },
 
     logo: {
         height: 32,
         resizeMode: 'contain',
         alignSelf: 'center',
-        marginTop: 10,
+        marginTop: 30,
     }
 });
